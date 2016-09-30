@@ -1,0 +1,5 @@
+# my PyPI library =) See https://github.com/duboviy/pybenchmark for details
+pybenchmark
+
+geoplotlib
+pyglet

@@ -87,3 +87,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Covers JetBrains PyCharm IDE project files (user-specific stuff):
+.idea/
