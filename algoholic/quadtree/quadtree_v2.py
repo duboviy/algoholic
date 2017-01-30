@@ -8,7 +8,7 @@ from geoplotlib.utils import BoundingBox
 import numpy as np
 
 
-class QuadTree:
+class QuadTree(object):
     def __init__(self, left, right, top, bottom):
         self.left = left
         self.right = right
@@ -63,7 +63,7 @@ class QuadsLayer(BaseLayer):
             else:
                 done.append(qt)
 
-        print len(queue), len(done)
+        print(len(queue), len(done))
 
         if self.cmap is not None:
             for qt in done:
@@ -82,5 +82,5 @@ class QuadsLayer(BaseLayer):
 data = geoplotlib.utils.read_csv('data/bus.csv')
 geoplotlib.add_layer(QuadsLayer(data, cmap=None))
 geoplotlib.set_smoothing(False)
-geoplotlib.set_bbox(geoplotlib.utils.BoundingBox.DK)
+geoplotlib.set_bbox(BoundingBox.DK)
 geoplotlib.show()

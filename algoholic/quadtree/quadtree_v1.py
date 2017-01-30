@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from matplotlib.patches import Polygon
 from matplotlib.collections import PatchCollection
-from math import sqrt, sin
+from math import sqrt
 from pprint import pformat
 from copy import deepcopy
 from itertools import chain, izip, product

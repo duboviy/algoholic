@@ -1,0 +1,15 @@
+pylint:
+  disable:
+    # W0105: String statement has no effect
+    - W0105
+    # W0612: Unused variable %r
+    - W0612
+    # W0613: Unused argument %r
+    - W0613
+    # Too many local vars
+    - R0914
+
+pyflakes:
+  disable:
+    # F401: unused import
+    - F401
